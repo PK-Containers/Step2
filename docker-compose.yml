@@ -1,0 +1,20 @@
+version: "3"
+services:
+  users:
+    build:
+       context: . 
+       dockerfile: Dockerfile.users
+    image: testusers3
+    container_name: myusers
+    ports:
+      - "5000:5000"
+    logging:
+      driver: "json-file"
+  todo:    
+    build:
+       context: .
+       dockerfile: Dockerfile.todo
+    image: testtodo
+    container_name: mytodo
+    ports:
+      - "5001:5001"

@@ -1,0 +1,15 @@
+FROM python:2.7.13
+
+EXPOSE 5000
+
+RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/database
+WORKDIR /usr/src/app
+
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY users.py /usr/src/app/users.py
+COPY database /usr/src/app/database
+
+CMD [ "python", "users.py" ]
