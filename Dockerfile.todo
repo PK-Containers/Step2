@@ -10,6 +10,6 @@ COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY todo.py /usr/src/app/todo.py
-COPY database /usr/src/app/database
+COPY database/todo.json /usr/src/app/database
 
 CMD [ "python", "todo.py" ]
