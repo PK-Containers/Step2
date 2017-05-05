@@ -1,10 +1,10 @@
 ### ==**_Some learnings and best practices_**==
  
-1. 		App/Services should not run in background for containers.
-1. 		Do not try to put more than one service per container.
-1. 		Docker compose can be used for local testing, but pick an orchestration tool for production.
-1.        List down the use case requirements and pick the orchestration tool that will support the requirements as an easy integration or out of the box functionality.
-2. By Default, unless specified, docker runs on bridge network. https://docs.docker.com/engine/userguide/networking/
+1. App/Services should not run in background for containers.
+2. Do not try to put more than one service per container.
+3. Docker compose can be used for local testing, but pick an orchestration tool for production.
+4. List down the use case requirements and pick the orchestration tool that will support the requirements as an easy integration or out of the box functionality.
+5. By Default, unless specified, docker runs on bridge network. https://docs.docker.com/engine/userguide/networking/
 
 
 			HQSML-151665:database pkrish00c$ docker network ls
