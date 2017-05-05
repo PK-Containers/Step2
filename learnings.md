@@ -1,4 +1,4 @@
-### ==**_Some learnings and best practices_**==
+Some learnings and best practices
  
 1. App/Services should not run in background for containers.
 2. Do not try to put more than one service per container.
