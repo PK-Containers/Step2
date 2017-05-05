@@ -10,6 +10,6 @@ COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY users.py /usr/src/app/users.py
-COPY database /usr/src/app/database
+COPY database/users.json /usr/src/app/database
 
 CMD [ "python", "users.py" ]
