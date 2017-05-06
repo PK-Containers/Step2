@@ -39,10 +39,10 @@ def user_lists(username):
     ''' Get lists based on username '''
 
     try:
-        req = requests.get("http://mytodo:5001/lists/{}".format(username))
+        req = requests.get("http://mytodo:5002/lists/{}".format(username))
     except requests.exceptions.ConnectionError:
         return "Service unavailable"
     return req.text
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=5002, debug=True)
+    app.run(host="0.0.0.0",port=5001, debug=True)
