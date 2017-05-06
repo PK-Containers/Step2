@@ -7,7 +7,7 @@ services:
     image: users
     container_name: myusers
     ports:
-      - "5000:5000"
+      - "5001:5001"
     logging:
       driver: "json-file"
   todo:    
@@ -17,4 +17,4 @@ services:
     image: todo
     container_name: mytodo
     ports:
-      - "5001:5001"
+      - "5002:5002"
